@@ -14,7 +14,7 @@
       "settings": {
         "hero_heading": "The absolute essentials",
         "hero_subheading": "Get inspired",
-        "hero_subheading_collection": "",
+        "hero_subheading_collection": "all",
         "hero_image": "shopify:\/\/shop_images\/Hero_Image.png",
         "blob_color1": "#eeaec9",
         "blob_color2": "#fe9b1c"
