@@ -1,0 +1,206 @@
+{% style %}
+    .new-arrivals-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .new-arrivals-heading-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .new-arrivals-heading {
+      font-size: 32px;
+      font-weight: 600;
+      margin: 0;
+      font-family: {{ section.settings.heading_font.family }}, sans-serif; 
+    }
+    
+    .shop-button {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 30px;
+      text-decoration: none;
+      border: none;
+      border-radius: 40px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .new-arrivals-products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 16px;
+    }
+    
+    .product-item {
+      width: 25%; /* Adjusted width for spacing */
+      text-align: left;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .product-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-item img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .product-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline; 
+      padding: 0 16px;
+    }
+    
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    .product-price {
+      font-size: 16px;
+      color: #333;
+    }
+    
+    .product-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #1717174D;
+      padding: 5px 10px;
+      font-size: 12px;
+      color: white;
+      border-radius: 20px;
+    }
+
+    .product-item a {
+      text-decoration: none; 
+      color: inherit; 
+    }
+    
+    @media (max-width: 768px) {
+      .new-arrivals-heading {
+        max-width: 200px;
+      }
+    
+      .shop-button {
+        margin-top: 10px;
+      }
+    
+      .new-arrivals-products {
+        flex-direction: column;
+      }
+    
+      .product-item {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      .product-badge {
+        display: none;
+      }
+    
+      .product-info { 
+        flex-direction: column;
+      }
+    
+      .product-title {
+        font-weight: 800;
+      }
+    }
+    
+    {% endstyle %}
+    
+    <div class="new-arrivals-section">
+      <div class="new-arrivals-heading-container">
+        <h2 class="new-arrivals-heading">{{ section.settings.new_arrivals_heading }}</h2>
+        <button class="shop-button">{{ section.settings.shop_button_text }}</button>
+      </div>
+      <div class="new-arrivals-products">
+        {% for block in section.blocks %}
+        {% assign product = all_products[block.settings.product_handle] %}
+        <div class="product-item">
+          {% if block.settings.show_badge %}
+          <span class="product-badge">{{ block.settings.badge_text }}</span>
+          {% endif %}
+          <a href="{{ product.url }}">
+             {{ product.featured_image | image_url: width: 800 | image_tag  }}
+                <div class="product-info">
+                    <div class="product-title">{{ product.title }}</div>
+                    <div class="product-price">{{ product.price | money }}</div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    {% schema %}
+    {
+      "name": "Case Products Showcase",
+      "max_blocks": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "new_arrivals_heading",
+          "label": "Heading",
+          "default": "NEW ARRIVALS"
+        },
+        {
+          "type": "font_picker",
+          "id": "heading_font",
+          "label": "Heading Font",
+          "default": "helvetica_n4"
+        },
+        {
+          "type": "text",
+          "id": "shop_button_text",
+          "label": "Shop Button Text",
+          "default": "SHOP"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "product",
+          "name": "Product",
+          "settings": [
+            {
+              "type": "product",
+              "id": "product_handle",
+              "label": "Select Product"
+            },
+            {
+              "type": "checkbox",
+              "id": "show_badge",
+              "label": "Show Badge",
+              "default": true
+            },
+            {
+              "type": "text",
+              "id": "badge_text",
+              "label": "Badge Text",
+              "default": "NEW COLORS"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Case Products Showcase",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
+    
+
+
+
