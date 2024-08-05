@@ -15,7 +15,7 @@
       font-size: 32px;
       font-weight: 600;
       margin: 0;
-      font-family: {{ section.settings.heading_font.family }}, sans-serif; 
+      font-family: {{ section.settings.heading_font.family }}, sans-serif !important; 
     }
     
     .shop-button {
@@ -80,7 +80,7 @@
       color: white;
       border-radius: 20px;
     }
-
+    
     .product-item a {
       text-decoration: none; 
       color: inherit; 
@@ -96,12 +96,15 @@
       }
     
       .new-arrivals-products {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        /* gap: 20px; */
       }
     
       .product-item {
-        width: 100%;
+        width: auto;
         margin-bottom: 20px;
+      
       }
     
       .product-badge {
@@ -115,9 +118,11 @@
       .product-title {
         font-weight: 800;
       }
+
     }
-    
     {% endstyle %}
+    
+    
     
     <div class="new-arrivals-section">
       <div class="new-arrivals-heading-container">
