@@ -111,7 +111,7 @@
         "text_HqKNRW": {
           "type": "text",
           "settings": {
-            "text": "<p>This bundle uses a Cart Transformation Function and takes 20% off the order when any snowboard and wax products are purchased together<\/p>",
+            "text": "<p>This bundle uses a Cart Transformation Function and takes 20% off the order when any snowboard and wax products are purchased together.<\/p><p>Need to enable Checkout Extensibility to make this work, <\/p>",
             "text_style": "body"
           }
         },
@@ -145,7 +145,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "image_with_text_rB6qme": {
@@ -161,7 +161,7 @@
         "text_hmPktG": {
           "type": "text",
           "settings": {
-            "text": "<p>This bundle uses Shopify's native bundle app to create a bundle container-product which can be placed in the cart<\/p>",
+            "text": "<p>This bundle uses Shopify's free & native app to create a bundle container-product which can be placed in the cart and purchased.<br\/><br\/>Fast setup but not very flexible. Better apps exist out there. <\/p>",
             "text_style": "body"
           }
         },
@@ -191,7 +191,7 @@
         "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     }
