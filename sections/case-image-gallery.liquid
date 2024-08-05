@@ -1,0 +1,135 @@
+{% style %}
+    .custom-section {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr;
+      gap: 200px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .custom-section .item {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .custom-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+      order: 1; 
+    }
+    
+    .custom-section .content {
+      padding: 10px 0;
+      order: 2; 
+    }
+    
+    .custom-section .heading {
+      font-size: 32px;
+      margin: 0;
+      color: #000;
+      font-family: {{ section.settings.heading_font.family }}, sans-serif; 
+    }
+    
+    .custom-section .subheading {
+      font-size: 13px;
+      margin: 5px 0 0;
+      text-decoration: underline;
+      color: #000;
+    }
+    
+    @media (max-width: 768px) {
+      .custom-section {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    
+      .custom-section .item {
+        margin-bottom: 20px;
+      }
+
+      .custom-section img {
+        order: 2;
+      }
+    
+      .custom-section .content {
+        order: 1;
+      }
+    
+      .custom-section .heading {
+        font-size: 24px;
+      }
+    
+      .custom-section .subheading {
+        font-size: 12px;
+      }
+    }
+{% endstyle %}
+    
+    <div class="custom-section">
+      {% for block in section.blocks %}
+      <div class="item">
+        {{ block.settings.image | image_url: width: 800 | image_tag }}
+        <div class="content">
+          <h2 class="heading">{{ block.settings.heading }}</h2>
+          <a href="{{ block.settings.link_url }}" class="subheading">{{ block.settings.subheading_link_text }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    {% schema %}
+    {
+      "name": "Case Image Gallery",
+      "settings": [
+        {
+          "type": "font_picker",
+          "id": "heading_font",
+          "label": "Heading Font",
+          "default": "helvetica_n4"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "item",
+          "name": "Item",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "heading",
+              "label": "Heading",
+              "default": "A cozy evening"
+            },
+            {
+              "type": "text",
+              "id": "subheading_link_text",
+              "label": "Subheading Link Text",
+              "default": "Read the whole story"
+            },
+            {
+              "type": "text",
+              "id": "link_url",
+              "label": "Link URL",
+              "default": "#"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Case Image Gallery",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
+    
+
+    
