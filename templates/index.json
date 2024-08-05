@@ -129,6 +129,9 @@
         "text_HqKNRW",
         "button_iePWGR"
       ],
+      "custom_css": [
+        ".button--primary{border-radius: 30px}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Snowboard-plus-Wax.png",
         "height": "adapt",
