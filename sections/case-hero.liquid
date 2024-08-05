@@ -1,0 +1,172 @@
+{% style %}
+    .hero-section-{{ section.id }} {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      position: relative;
+    }
+    
+    .hero-section-{{ section.id }}::after {
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      width: 30%;
+      height: 40%;
+      background: radial-gradient(
+          circle at 20% 20%,
+          rgba({{ section.settings.blob_color1 | color_to_rgb | split: 'rgb(' | last | split: ')' | first }}, 0.35) 20%,
+          transparent 50%
+        ),
+        radial-gradient(
+          circle at 60% 60%,
+          rgba({{ section.settings.blob_color2 | color_to_rgb | split: 'rgb(' | last | split: ')' | first }}, 0.35) 20%,
+          transparent 50%
+        );
+      filter: blur(80px);
+      z-index: -1;
+    }
+    
+    .hero-content-{{ section.id }} {
+      z-index: 2;
+      position: sticky; 
+      top: 20px;
+    }
+    
+    .hero-heading-{{ section.id }} {
+      font-size: 64px;
+      line-height: 64px;
+      font-weight: 400;
+      margin: 0;
+      max-width: 400px
+    }
+    
+    .hero-subheading-{{ section.id }} {
+      font-size: 18px;
+      font-weight: 300;
+      color: #000;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      border-bottom: 2px solid black;
+    }
+    
+    .hero-image-{{ section.id }} img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-width: 684px;
+      max-height: 800px;
+    }
+    
+    /* @media (max-width: 1200px) {
+      .hero-heading-{{ section.id }} {
+        font-size: 32px;
+        line-height: 32px;
+      }
+    
+      .hero-subheading-{{ section.id }} {
+        font-size: 15px;
+        line-height: 19px;
+      }
+    } */
+    
+    @media (max-width: 768px) {
+      .hero-section-{{ section.id }} {
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto auto; /* Adjust rows */
+        align-items: start;
+        text-align: left;
+        padding: 10px;
+      }
+    
+      .hero-content-{{ section.id }} {
+        order: 2; 
+        width: 60%;
+      }
+    
+      .hero-image-{{ section.id }} {
+        order: 1; 
+      }
+    
+      .hero-heading-{{ section.id }} {
+        font-size: 32px;
+        line-height: 32px;
+      }
+    
+      .hero-subheading-{{ section.id }} {
+        font-size: 14px;
+      }
+    
+      .hero-section-{{ section.id }}::after {
+        display: none;
+      }
+    }
+    {% endstyle %}
+    
+    <div class="hero-section-{{ section.id }}">
+      <div class="hero-content-{{ section.id }}">
+        <h1 class="hero-heading-{{ section.id }}">{{ section.settings.hero_heading }}</h1>
+        <a href="/collections/{{ section.settings.hero_subheading_collection | url }}" class="hero-subheading-{{ section.id }}">{{ section.settings.hero_subheading }}</a>
+      </div>
+      <div class="hero-image-{{ section.id }}">
+        {{ section.settings.hero_image | image_url: width: 684 | image_tag }}
+      </div>
+      <div class="hero-blob-{{ section.id }}"></div>
+    </div>
+      
+    {% schema %}
+    {
+      "name": "Case Assignment Hero",
+      "settings": [
+        {
+          "type": "text",
+          "id": "hero_heading",
+          "label": "Hero Heading",
+          "default": "The absolute essentials"
+        },
+        {
+          "type": "text",
+          "id": "hero_subheading",
+          "label": "Hero Subheading",
+          "default": "Get inspired"
+        },
+        {
+  "type": "collection",
+  "id": "hero_subheading_collection",
+  "label": "Subheading Link"
+},
+        {
+          "type": "image_picker",
+          "id": "hero_image",
+          "label": "Hero Image"
+        },
+        {
+          "type": "header",
+          "content": "Color Blob Settings"
+        },
+        {
+          "type": "color",
+          "id": "blob_color1",
+          "label": "Blob Color 1",
+          "default": "#eeaec9"
+        },
+        {
+          "type": "color",
+          "id": "blob_color2",
+          "label": "Blob Color 2",
+          "default": "#94b7e9"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Case Assignment Hero",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
+    
