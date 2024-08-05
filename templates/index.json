@@ -111,7 +111,7 @@
         "text_HqKNRW": {
           "type": "text",
           "settings": {
-            "text": "<p>This bundle uses a Cart Transformation Function and takes 20% off the order when a snowboard and wax product are purchased together<\/p>",
+            "text": "<p>This bundle uses a Cart Transformation Function and takes 20% off the order when any snowboard and wax products are purchased together<\/p>",
             "text_style": "body"
           }
         },
