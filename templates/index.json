@@ -130,7 +130,7 @@
         "button_iePWGR"
       ],
       "custom_css": [
-        ".button--primary{border-radius: 30px}"
+        ".button--primary {border-radius: 30px; border: none}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Snowboard-plus-Wax.png",
