@@ -20,49 +20,57 @@
         "blob_color2": "#fe9b1c"
       }
     },
-    "image_banner": {
-      "type": "image-banner",
+    "case_products_showcase_TraCmb": {
+      "type": "case-products-showcase",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "product_J49LXq": {
+          "type": "product",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "product_handle": "maria-sports-bra",
+            "show_badge": true,
+            "badge_text": "NEW COLORS"
           }
         },
-        "button": {
-          "type": "buttons",
+        "product_HVintA": {
+          "type": "product",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "product_handle": "elite-ultralight-tights",
+            "show_badge": true,
+            "badge_text": "NEW COLORS"
+          }
+        },
+        "product_MJwfdL": {
+          "type": "product",
+          "settings": {
+            "product_handle": "caroline-half-zip",
+            "show_badge": true,
+            "badge_text": "NEW COLORS"
+          }
+        },
+        "product_diMATp": {
+          "type": "product",
+          "settings": {
+            "product_handle": "elite-ultralight-tee",
+            "show_badge": true,
+            "badge_text": "NEW"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "product_J49LXq",
+        "product_HVintA",
+        "product_MJwfdL",
+        "product_diMATp"
       ],
-      "disabled": true,
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "new_arrivals_heading": "NEW ARRIVALS",
+        "heading_font": "helvetica_n4",
+        "shop_button_text": "SHOP"
       }
     }
   },
   "order": [
     "case_hero_VkxtHi",
-    "image_banner"
+    "case_products_showcase_TraCmb"
   ]
 }
