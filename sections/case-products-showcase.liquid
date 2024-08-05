@@ -10,13 +10,18 @@
       justify-content: space-between;
       align-items: center;
     }
+
+    .new-arrivals-section {
+      --font-heading-family: {{ section.settings.heading_font.family }};
+    } 
     
     .new-arrivals-heading {
       font-size: 32px;
       font-weight: 600;
       margin: 0;
-      font-family: {{ section.settings.heading_font.family }}, sans-serif !important; 
+      font-family: var(--font-heading-family), sans-serif !Important;
     }
+
     
     .shop-button {
       background-color: #000;
@@ -26,6 +31,7 @@
       border: none;
       border-radius: 40px;
       font-size: 16px;
+      font-weight: 700;
       cursor: pointer;
     }
     
