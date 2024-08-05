@@ -16,7 +16,7 @@ The hero section is a clean mobile responsive intro to the page. The section set
   - File: case-hero.liquid
 
 Visuals:
-![Hero Section](https://github.com/MrRobotical/shopify-theme-sandbox/blob/main/assets/readme-hero-section.png)
+![Hero Section](https://github.com/MrRobotical/case-asignment/blob/main/assets/readme-hero-section.png)
 <br><br><br>
 
 ## Products Showcase Section
@@ -26,7 +26,7 @@ The products showcase section allows the merchant to customize the heading and t
 - File: case-products-showcase.liquid
 
 Visuals:
-![Products Showcase Section](https://github.com/MrRobotical/shopify-theme-sandbox/blob/main/assets/readme-products.png)
+![Products Showcase Section](https://github.com/MrRobotical/case-asignment/blob/main/assets/readme-products.png)
 <br><br><br>
 
 ## Image Gallery Section
@@ -36,7 +36,7 @@ The image gallery feature showcases a modern look with a balanced asymmetrical l
 - File: case-image-gallery.liquid
 
 Visuals:
-![Image Gallery](https://github.com/MrRobotical/shopify-theme-sandbox/blob/main/assets/readme-images.png)
+![Image Gallery](https://github.com/MrRobotical/case-asignment/blob/main/assets/readme-images.png)
 <br><br><br>
 
 ## Bundles Exploration
@@ -51,7 +51,7 @@ We've explored 2 possible paths for product bundling in this assignment.
   Checkout extensibility needs to be enabled for this to work
 
   Visuals from a store the function is installed on:
-  ![Bundles Function](https://github.com/MrRobotical/shopify-theme-sandbox/blob/main/assets/readme-bundle-function.png)
+  ![Bundles Function](https://github.com/MrRobotical/case-asignment/blob/main/assets/readme-bundle-function.png)
   <br><br><br>
 
 - Bundles via the Shopify Bundles App
@@ -63,5 +63,5 @@ We've explored 2 possible paths for product bundling in this assignment.
   There also are a multitude of bundle apps out there which can offer significant customization and could be a worthwhile comparison vs creating a custom function for the client like in the example above.
 
   Visuals from a store the function is installed on:
-  ![Bundles App](https://github.com/MrRobotical/shopify-theme-sandbox/blob/main/assets/readme-bundle-native.png)
+  ![Bundles App](https://github.com/MrRobotical/case-asignment/blob/main/assets/readme-bundle-native.png)
   <br><br><br>
