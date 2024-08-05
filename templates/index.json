@@ -104,7 +104,7 @@
         "heading_tR9WML": {
           "type": "heading",
           "settings": {
-            "heading": "Snowboard & Wax Bundle",
+            "heading": "Function Bundle",
             "heading_size": "h1"
           }
         },
@@ -147,12 +147,59 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_rB6qme": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9WfTU6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fixed Bundle",
+            "heading_size": "h1"
+          }
+        },
+        "text_hmPktG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This bundle uses Shopify's native bundle app to create a bundle container-product which can be placed in the cart<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_qCRx9J": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop A Fixed Bundle",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9WfTU6",
+        "text_hmPktG",
+        "button_qCRx9J"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "case_hero_VkxtHi",
     "case_products_showcase_TraCmb",
     "case_image_gallery_FrWjfR",
-    "image_with_text_wRKBqW"
+    "image_with_text_wRKBqW",
+    "image_with_text_rB6qme"
   ]
 }
