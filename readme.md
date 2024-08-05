@@ -6,12 +6,12 @@
 
 ## Hero Section
 
-The hero section is a clean mobile responsive intro to the page. The section settings allow the merchant to customize the following:
+The hero section is a clean, mobile responsive intro to the page. The section settings allow the merchant to customize the following:
 
 - Hero Image
 - Heading and sub-heading
 - Link
-- Can customize the gradiant blob colors
+- Can customize the gradient blob colors
 
   - File: case-hero.liquid
 
@@ -21,7 +21,7 @@ Visuals:
 
 ## Products Showcase Section
 
-The products showcase section allows the merchant to customize the heading and the CTA button text. It also features section blocks which allow you to pick up to 4 products to showcase and display custom badge messaging per product from the theme editor. This section is mobile responsive and removes the badges on mobile devices for better visual clarity.
+The products showcase section allows the merchant to customize the heading and the CTA button text. It also features section blocks which allow you to pick up to 4 products to showcase and display custom badge messaging per product from the theme editor. This section is mobile-responsive and removes the badges on mobile devices for better visual clarity.
 
 - File: case-products-showcase.liquid
 
@@ -41,14 +41,12 @@ Visuals:
 
 ## Bundles Exploration
 
-Bundleing products on Shopify is a great way to stand apart from the pack.
+Bundling products on Shopify is a great way to stand apart from the pack.
 We've explored 2 possible paths for product bundling in this assignment.
 
 - Bundles via the cart transformation function.
 
-  - This option allows for more customization vs the free Shopify Bundles app. At the moment, this function is set to take 20% the order if any wax product is present in the cart along with any snowboard product. These rules are currently based on product types but could be substituted for tags quite easily.
-
-  Checkout extensibility needs to be enabled for this to work
+  This option allows for more customization vs the free Shopify Bundles app. At the moment, this function is set to take 20% off the order if any wax product is present in the cart along with any snowboard product. These rules are currently based on product types but could be substituted for tags quite easily. Checkout extensibility needs to be enabled for this to work
 
   Visuals from a store the function is installed on:
   ![Bundles Function](https://github.com/MrRobotical/case-assignment/blob/main/assets/readme-bundle-function.png)
@@ -56,12 +54,12 @@ We've explored 2 possible paths for product bundling in this assignment.
 
 - Bundles via the Shopify Bundles App
 
-  - This is the simplest and quickest methods to implement bundles if the requirements are fairly simple.
+  This is the simplest and quickest methods to implement bundles if the requirements are fairly simple.
 
   The app allows you to choose products which will be part of the bundle, this then creates a bundle container product which you can set to a lower price.
 
-  There also are a multitude of bundle apps out there which can offer significant customization and could be a worthwhile comparison vs creating a custom function for the client like in the example above.
+  There are also a multitude of apps out there which can offer significant bundling customization and could be a worthwhile comparison vs creating a custom function like in the example above.
 
-  Visuals from a store the function is installed on:
-  ![Bundles App](https://github.com/MrRobotical/case-assignment/blob/main/assets/readme-bundle-native.png)
-  <br><br><br>
+Visuals of the bundled product from the admin:
+![Bundles App](https://github.com/MrRobotical/case-assignment/blob/main/assets/readme-bundle-native.png)
+<br><br><br>
