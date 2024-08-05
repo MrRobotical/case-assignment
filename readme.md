@@ -16,7 +16,7 @@ The hero section is a clean mobile responsive intro to the page. The section set
   - File: case-hero.liquid
 
 Visuals:
-![Hero Section](https://github.com/MrRobotical/case-asignment/blob/main/assets/readme-hero-section.png)
+![Hero Section](https://github.com/MrRobotical/case-assignment/blob/main/assets/readme-hero-section.png)
 <br><br><br>
 
 ## Products Showcase Section
