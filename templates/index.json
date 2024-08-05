@@ -67,10 +67,41 @@
         "heading_font": "helvetica_n4",
         "shop_button_text": "SHOP"
       }
+    },
+    "case_image_gallery_FrWjfR": {
+      "type": "case-image-gallery",
+      "blocks": {
+        "item_Q6LP9f": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Room1.png",
+            "heading": "A cozy evening",
+            "subheading_link_text": "Read the whole story",
+            "link_url": "https:\/\/jasons-case-store.myshopify.com\/collections\/all"
+          }
+        },
+        "item_VgzYny": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Room2.png",
+            "heading": "Relaxation is a mindset",
+            "subheading_link_text": "Get Inspired",
+            "link_url": "https:\/\/jasons-case-store.myshopify.com\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "item_Q6LP9f",
+        "item_VgzYny"
+      ],
+      "settings": {
+        "heading_font": "helvetica_n4"
+      }
     }
   },
   "order": [
     "case_hero_VkxtHi",
-    "case_products_showcase_TraCmb"
+    "case_products_showcase_TraCmb",
+    "case_image_gallery_FrWjfR"
   ]
 }
