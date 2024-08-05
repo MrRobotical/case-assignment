@@ -97,11 +97,59 @@
       "settings": {
         "heading_font": "helvetica_n4"
       }
+    },
+    "image_with_text_wRKBqW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_tR9WML": {
+          "type": "heading",
+          "settings": {
+            "heading": "Snowboard & Wax Bundle",
+            "heading_size": "h1"
+          }
+        },
+        "text_HqKNRW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This bundle uses a Cart Transformation Function and takes 20% off the order when a snowboard and wax product are purchased together<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_iePWGR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Build Your Bundle",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_tR9WML",
+        "text_HqKNRW",
+        "button_iePWGR"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Snowboard-plus-Wax.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "case_hero_VkxtHi",
     "case_products_showcase_TraCmb",
-    "case_image_gallery_FrWjfR"
+    "case_image_gallery_FrWjfR",
+    "image_with_text_wRKBqW"
   ]
 }
