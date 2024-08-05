@@ -141,7 +141,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -169,7 +169,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop A Fixed Bundle",
-            "button_link": "shopify:\/\/collections\/all",
+            "button_link": "shopify:\/\/products\/native-bundle-app-product",
             "button_style_secondary": false
           }
         }
@@ -180,8 +180,9 @@
         "button_qCRx9J"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/board-wax-bundle.jpg",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
