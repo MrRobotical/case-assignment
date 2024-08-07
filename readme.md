@@ -4,6 +4,13 @@
 - Use the provided Figma designs for both mobile & desktop.
 - Demonstrate how we could create a product bundle.
 
+###Preview:
+https://jasons-case-store.myshopify.com/
+
+###Password:
+nackow
+
+
 ## Hero Section
 
 The hero section is a clean, mobile responsive intro to the page. The section settings allow the merchant to customize the following:
